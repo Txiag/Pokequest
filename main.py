@@ -133,7 +133,7 @@ ids = [["1b.png", "1bw.png", 'VENOSAURO', 'GRAMA', 'VENENO', ['RAIO SOLAR', 'FOL
 
 
 def multiplicador(tipoa, tipo1i, tipo2i, teste):
-    if not teste:
+    if teste == False:
         m1 = multiplicador(tipoa, tipo2i, tipo1i, True)
         tipoa = get_type_txt(tipoa)
     m1 = 1
@@ -530,15 +530,18 @@ def atualizar_texto(frases):
             ultimo = font.render(frases[count-1], True, [0, 0, 0])
             text = font.render(frases[count][0:i+1], True, [0, 0, 0])
             display.blit(text_box, (0, 0))
-            if not cima:
+            if cima == False:
                 display.blit(text, (35, 475))
                 pygame.display.update((0, 452, 800, 148))
-            if cima:
+            if cima == True:
                 display.blit(ultimo, (35, 475))
                 display.blit(text, (35, 520))
                 pygame.display.update((0, 452, 800, 148))
             clock.tick(60)
-        cima == not cima
+        if cima == False:
+            cima = True
+        else:
+            cima = False
     clock.tick(2)
 
 
@@ -604,112 +607,112 @@ playername = ''
 def escolhernome():
     global display, playername, clock
     caps = False
-    if keys[pygame.K_CAPSLOCK] and not caps:
+    if keys[pygame.K_CAPSLOCK] and caps == False:
         caps = True
-    elif keys[pygame.K_CAPSLOCK] and caps:
+    elif keys[pygame.K_CAPSLOCK] and caps == True:
         caps = False
     clock.tick(10)
-    if keys[pygame.K_a] and not caps:
+    if keys[pygame.K_a] and caps == False:
         playername += 'a'
     elif keys[pygame.K_a] and caps:
         playername += 'A'
-    elif keys[pygame.K_b] and not caps:
+    elif keys[pygame.K_b] and caps == False:
         playername += 'b'
     elif keys[pygame.K_b] and caps:
         playername += 'B'
-    elif keys[pygame.K_c] and not caps:
+    elif keys[pygame.K_c] and caps == False:
         playername += 'c'
     elif keys[pygame.K_c] and caps:
         playername += 'C'
-    elif keys[pygame.K_d] and not caps:
+    elif keys[pygame.K_d] and caps == False:
         playername += 'd'
     elif keys[pygame.K_d] and caps:
         playername += 'D'
-    elif keys[pygame.K_e] and not caps:
+    elif keys[pygame.K_e] and caps == False:
         playername += 'e'
     elif keys[pygame.K_e] and caps:
         playername += 'E'
-    elif keys[pygame.K_f] and not caps:
+    elif keys[pygame.K_f] and caps == False:
         playername += 'f'
     elif keys[pygame.K_f] and caps:
         playername += 'F'
-    elif keys[pygame.K_g] and not caps:
+    elif keys[pygame.K_g] and caps == False:
         playername += 'g'
     elif keys[pygame.K_g] and caps:
         playername += 'G'
-    elif keys[pygame.K_h] and not caps:
+    elif keys[pygame.K_h] and caps == False:
         playername += 'h'
     elif keys[pygame.K_d] and caps:
         playername += 'H'
-    elif keys[pygame.K_i] and not caps:
+    elif keys[pygame.K_i] and caps == False:
         playername += 'i'
     elif keys[pygame.K_i] and caps:
         playername += 'I'
-    elif keys[pygame.K_j] and not caps:
+    elif keys[pygame.K_j] and caps == False:
         playername += 'j'
     elif keys[pygame.K_j] and caps:
         playername += 'J'
-    elif keys[pygame.K_k] and not caps:
+    elif keys[pygame.K_k] and caps == False:
         playername += 'k'
     elif keys[pygame.K_k] and caps:
         playername += 'K'
-    elif keys[pygame.K_l] and not caps:
+    elif keys[pygame.K_l] and caps == False:
         playername += 'l'
     elif keys[pygame.K_l] and caps:
         playername += 'L'
-    elif keys[pygame.K_m] and not caps:
+    elif keys[pygame.K_m] and caps == False:
         playername += 'm'
     elif keys[pygame.K_m] and caps:
         playername += 'M'
-    elif keys[pygame.K_n] and not caps:
+    elif keys[pygame.K_n] and caps == False:
         playername += 'n'
     elif keys[pygame.K_n] and caps:
         playername += 'N'
-    elif keys[pygame.K_o] and not caps:
+    elif keys[pygame.K_o] and caps == False:
         playername += 'o'
     elif keys[pygame.K_o] and caps:
         playername += 'O'
-    elif keys[pygame.K_p] and not caps:
+    elif keys[pygame.K_p] and caps == False:
         playername += 'p'
     elif keys[pygame.K_p] and caps:
         playername += 'P'
-    elif keys[pygame.K_q] and not caps:
+    elif keys[pygame.K_q] and caps == False:
         playername += 'q'
     elif keys[pygame.K_q] and caps:
         playername += 'Q'
-    elif keys[pygame.K_r] and not caps:
+    elif keys[pygame.K_r] and caps == False:
         playername += 'r'
     elif keys[pygame.K_r] and caps:
         playername += 'R'
-    elif keys[pygame.K_s] and not caps:
+    elif keys[pygame.K_s] and caps == False:
         playername += 's'
     elif keys[pygame.K_s] and caps:
         playername += 'S'
-    elif keys[pygame.K_t] and not caps:
+    elif keys[pygame.K_t] and caps == False:
         playername += 't'
     elif keys[pygame.K_t] and caps:
         playername += 'T'
-    elif keys[pygame.K_u] and not caps:
+    elif keys[pygame.K_u] and caps == False:
         playername += 'u'
     elif keys[pygame.K_u] and caps:
         playername += 'U'
-    elif keys[pygame.K_v] and not caps:
+    elif keys[pygame.K_v] and caps == False:
         playername += 'v'
     elif keys[pygame.K_v] and caps:
         playername += 'V'
-    elif keys[pygame.K_w] and not caps:
+    elif keys[pygame.K_w] and caps == False:
         playername += 'w'
     elif keys[pygame.K_w] and caps:
         playername += 'W'
-    elif keys[pygame.K_x] and not caps:
+    elif keys[pygame.K_x] and caps == False:
         playername += 'x'
     elif keys[pygame.K_u] and caps:
         playername += 'X'
-    elif keys[pygame.K_y] and not caps:
+    elif keys[pygame.K_y] and caps == False:
         playername += 'y'
     elif keys[pygame.K_y] and caps:
         playername += 'Y'
-    elif keys[pygame.K_z] and not caps:
+    elif keys[pygame.K_z] and caps == False:
         playername += 'z'
     elif keys[pygame.K_z] and caps:
         playername += 'Z'
@@ -1451,7 +1454,7 @@ hpa = pygame.transform.scale(hp[0], (84, 11))
 playerg = ''
 escolheu_nome = False
 escolheu_personagem = False
-while not escolheu_personagem:
+while escolheu_personagem == False:
     keys = pygame.key.get_pressed()
     for event in pygame.event.get():
         if event.type == pygame.QUIT or keys[pygame.K_q]:
@@ -1462,7 +1465,7 @@ while not escolheu_personagem:
     pygame.display.flip()
 carregar_sprites()
 
-while not escolheu_nome:
+while escolheu_nome == False:
     keys = pygame.key.get_pressed()
     for event in pygame.event.get():
         if event.type == pygame.QUIT or keys[pygame.K_q]:
