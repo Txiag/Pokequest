@@ -5,7 +5,8 @@
 
 header{
   background-image: url(aa.png)
- h1 {
+}
+header h1{
     font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #f3f3f3;
     text-shadow: 0px 2px 0px #235796;
@@ -15,12 +16,10 @@ header{
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
-  }
-
-p {
+}
+header p{
     color: white;
     text-shadow:rgba(#000, 0.2) 0 1px 0;
     font-size: 18px;
     margin: 0px;
-  }
 }
