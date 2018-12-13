@@ -1,5 +1,7 @@
 # Pokéquest
+
 <hr>
+
 ## What is Pokéquest?
 
 Pokéquest is a Pokémon-Inspired game made with pygame lib for python3.
