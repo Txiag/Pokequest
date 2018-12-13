@@ -23,10 +23,10 @@ Pokéquest is a Pokémon-Inspired game made with pygame lib for python3.
 <hr>
 
 ## Features
-- [x] &nbsp More than 40 Pokémon avaliable
-- [x] &nbsp 4 Fully-Functional battles against NPCs
-- [x] &nbsp Change Pokémon System
-- [ ] &nbsp Attack Animations
-- [ ] &nbsp Local Battle
-- [ ] &nbsp Itens system
-- [ ] &nbsp English Support
+- [x] &nbsp; More than 40 Pokémon avaliable
+- [x] &nbsp; 4 Fully-Functional battles against NPCs
+- [x] &nbsp; Change Pokémon System
+- [ ] &nbsp; Attack Animations
+- [ ] &nbsp; Local Battle
+- [ ] &nbsp; Itens system
+- [ ] &nbsp; English Support
