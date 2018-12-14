@@ -268,7 +268,7 @@ ale = ['Ale', 421, 264, pygame.image.load('Looking_Left_Ale.png'), pygame.image.
 
 def animainimigo(npc):
     global display, clock, base_inimiga, base_aliada, fundo_batalha, estado
-    textos = ['VOCÊ NÃO VAI CONSEGUIR PASSAR DAQUI', 'MELHOR DIZER ADEUS PARA SUA NOTA!', 'EU NÃO VOU SER REPROVADA', 'EU QUASE MORRI FAZENDO AQUELA UL!A']
+    textos = ['VOCÊ NÃO VAI CONSEGUIR PASSAR DAQUI', 'MELHOR DIZER ADEUS PARA SUA NOTA!', 'EU NÃO VOU SER REPROVADA', 'EU QUASE MORRI FAZENDO AQUELA ULA']
     for i in range(7, 10):
         clock.tick(5)
         posm = posx, posy = pygame.mouse.get_pos()
@@ -1463,6 +1463,7 @@ while escolheu_personagem == False:
     display.blit(fundo, (0, 0))  # Mostrar o fundoq
     escolher_personagem_1()
     pygame.display.flip()
+    clock.tick(25)
 carregar_sprites()
 
 while escolheu_nome == False:
