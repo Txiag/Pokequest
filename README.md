@@ -19,7 +19,9 @@ Pokéquest is a Pokémon-Inspired game made with pygame lib for python3.
 3. [Download the zip](https://github.com/Txiag/Pokequest/archive/master.zip) or Clone the game
 4. Execute the main.py file 
 - On Windows: Double click on the file
-- On Linux Terminal: $python3 main.py
+- On Linux Terminal: 
+
+  ` $python3 main.py `
 
 ### On the selection screen
 <hr>
