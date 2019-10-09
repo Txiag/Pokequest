@@ -24,6 +24,7 @@ Pokéquest is a Pokémon-Inspired game made with pygame lib for python3.
   ` $python3 main.py `
 
 ### On the selection screen
+<hr>
 
 ## Features
 - [x] &nbsp; More than 40 Pokémon avaliable
